@@ -22,5 +22,5 @@ class Solution(ListNode):
 
         return decimal
 
-Resh = Solution([1,0,0,1,0,0,1,1,1,0,0,0,0,0,0])
+Resh = Solution()
 print(Resh.getDecimalValue())
