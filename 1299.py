@@ -1,17 +1,11 @@
 class Solution(object):
-    def replaceElements(self, array):
+    def replaceElements(self, arr):
         new_arr = []
-        for i in range(len(array)):
-            del array[0]
-            new_arr.append(max(array))
+        for i in range(len(arr) - 1):
+            new = arr[i + 1:]
+            new_arr.append(max(new))
+        new_arr.append(-1)
         return new_arr
-
-
-
-
-
-
-
 
 
 Resh = Solution()
